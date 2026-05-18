@@ -1,26 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enter Reset Code | BOLUXE</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Enter Reset Code | BOLUXE</title>
+<link href="authstyles.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&family=Great+Vibes&display=swap" rel="stylesheet">
 </head>
 <body>
-        <h1>Enter Reset Code</h1>
-        <p>For this assignment, use code: <strong>254683</strong></p>
-        <form action="createnewpassword.html">
-            <div>
-                <input type="text">
-                <input type="text">
-                <input type="text">
-                <input type="text">
-                <input type="text">
-                <input type="text">
-            </div>
+<div class="enterresetcode">
 
-            <p>Code expires in 04:52</p>
-            <a href="createnewpassword.html">
+    <div class="auth-logo">
+        <img src="logo.png" alt="BOLUXE Logo">
+    </div>
+
+    <h1>Enter Reset Code</h1>
+
+    <p class="desc">
+        For this assignment, use code: <strong>254683</strong>
+    </p>
+
+               <form action="createnewpassword.html">
+
+                <div class="code-inputs">
+                    <input type="text" maxlength="1">
+                    <input type="text" maxlength="1">
+                    <input type="text" maxlength="1">
+                    <input type="text" maxlength="1">
+                    <input type="text" maxlength="1">
+                    <input type="text" maxlength="1">
+                </div>
+                <p class="timer">
+                    Code expires in <span id="countdown">05:00</span>
+                </p>
+
                 <button type="submit">Continue</button>
-            </a>
+
+            </form>
+
+
+    <p style="margin-top: 15px;">
+        <a href="forgotpassword.html">
+            <i class="fa-solid fa-arrow-left"></i> Back
+        </a>
+    </p>
+
+</div>
+
+<script>
+let time = 300;
+const countdown = document.getElementById("countdown");
+
+const timer = setInterval(() => {
+    let minutes = Math.floor(time / 60);
+    let seconds = time % 60;
+
+    seconds = seconds < 10 ? "0" + seconds : seconds;
+
+    countdown.textContent = minutes + ":" + seconds;
+
+    time--;
+
+    if (time < 0) {
+        clearInterval(timer);
+        countdown.textContent = "Expired";
+    }
+}, 1000);
+</script>
+
 </body>
 </html>
+
