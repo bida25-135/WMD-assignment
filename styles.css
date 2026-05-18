@@ -1,0 +1,795 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    border-bottom: 2px solid #d4af37;
+}
+
+nav {
+    display: flex;
+    gap: 18px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #d4af37;
+}
+
+.logo {
+    width: 110px;
+    height: 110px;
+    background: url("logo.png") center/contain no-repeat; 
+}
+
+/* homepage */
+.hero{
+    height:90vh;
+    background:
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("hair\ banner.jpeg");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.btn,
+.hero-btn,
+button{
+    background-color: #d4af37;
+    color: #000;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.btn:hover,
+.hero-btn:hover,
+button:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+h1,h2,h3{
+    font-family: 'Playfair Display', serif;
+    color: #d4af37;
+}
+
+.about-homepage{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:60px;
+    padding:100px 10%;
+    background:#111;
+}
+
+.text {
+    width: 50%;
+}
+
+.text p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.btn {
+    background-color: black;
+    color: #d4af37;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #d4af37;
+    color: black;
+}
+
+.image{
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
+
+.image img{
+    width:100%;
+    max-width:450px;
+    border-radius:15px;
+    border:2px solid #d4af37;
+    box-shadow:0 0 20px rgba(212,175,55,0.3);
+}
+
+/*About*/
+#behindthebeauty{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:60px;
+    padding:100px 10%;
+    min-height:100vh;
+    background:black;
+
+}
+
+#about-us{
+    text-align: left;
+    color:#ccc;
+    margin-bottom:40px;
+    max-width:650px;
+    font-size:16px;
+}
+
+.about-image{
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
+
+.about-image img{
+    width:100%;
+    max-width:700px;
+    margin-bottom: 50px;
+    border-radius:15px;
+    border:2px solid #d4af37;
+    box-shadow:0 0 20px rgba(212,175,55,0.3);
+    object-fit:cover;
+}
+
+/*Services*/
+.Services{
+    h1{
+        font-family: 'Playfair Display', serif;
+        size: 48px;
+        text-align: center;
+    }
+    text-align:center;
+}
+
+.services-grid{
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap:40px;
+    max-width:1000px;
+    margin:auto;
+}
+
+.service-card{
+    background:#111;
+    border-radius:15px;
+    border:1px solid #d4af37;
+    padding:25px;
+    margin-bottom: 50px;
+    transition:0.3s;
+}
+
+.service-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 15px rgba(212,175,55,0.5);
+}
+
+.service-card img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+    border-radius:10px;
+}
+.service-btn{
+    display:inline-block;
+    padding:14px 32px;
+    background:#d4af37;
+    color:#000;
+    text-decoration:none;
+    font-weight:bold;
+    border-radius:30px;
+    transition:0.3s;
+    margin-bottom:50px;
+}
+
+/*Gallery*/
+.gallery {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+.gallery h1 {
+    text-align: center;
+    size: 48px;
+    font-family: 'Playfair Display', serif;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.gallery h1 {
+    grid-column: 1 / -1;
+}
+
+.gallery-card {
+    background: #333;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.gallery-card h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.gallery-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.gallery-card p {
+    margin: 8px 0;
+    font-size: 16px;
+}
+
+.price {
+    font-weight: bold;
+    color: #d4af37;
+}
+/*Stylists*/
+h1{
+    text-align: center;
+    size: 48px;
+}
+p{
+    text-align: center;
+}
+.stylist-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 36px;
+    margin: auto;
+    max-width: 1300px;
+    padding: 50px;
+}
+.stylist-card{
+    background:#111;
+    border:1px solid #d4af37;
+    border-radius:18px;
+    overflow:hidden;
+    padding:20px;
+    box-shadow:0 0 12px rgba(212,175,55,0.15);
+    transition:0.3s;
+}
+
+.stylist-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 18px rgba(212,175,55,0.35);
+}
+
+.stylist-card img{
+    width:100%;
+    height:305px;
+    object-fit:cover;
+    border-radius:12px;
+    margin-bottom:18px;
+}
+.stylist-grid,.stylist-card{
+    text-align: center;
+    box-shadow: #d4af37;
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+/*Appointment*/
+#booking{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    padding:20px;
+}
+
+#appointment{
+    width:100%;
+    max-width:550px;
+    background:#151515;
+    padding:45px;
+    border-radius:22px;
+    border:1px solid rgba(212,175,55,0.4);
+    box-shadow:
+    0 0 20px rgba(212,175,55,0.1),
+    0 0 40px rgba(212,175,55,0.05);
+}
+
+#appointment label{
+    display:block;
+    margin-top:22px;
+    margin-bottom:10px;
+    color:#d4af37;
+    font-size:15px;
+    font-weight:500;
+}
+
+#appointment input,
+#appointment select{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:12px;
+    background:#1f1f1f;
+    color:white;
+    font-size:15px;
+    transition:0.3s;
+}
+
+#appointment input:focus,
+#appointment select:focus{
+    outline:none;
+    border:1px solid #d4af37;
+    box-shadow:0 0 10px rgba(212,175,55,0.3);
+}
+
+/*Feedback*/
+#feedback{
+    width:100%;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:80px 20px;
+}
+#description{
+    max-width:650px;
+    text-align:center;
+    color:#d0d0d0;
+    line-height:1.8;
+    margin-bottom:45px;
+}
+
+#feedback-form{
+    width:100%;
+    max-width:600px;
+    background:#151515;
+    padding:45px;
+    border-radius:24px;
+    border: 2px solid #af8a10;
+    box-shadow:
+    0 0 20px rgba(212,175,55,0.08),
+    0 0 40px rgba(212,175,55,0.04);
+}
+
+.form-group,
+.feedback-form{
+    margin-bottom:25px;
+}
+
+label{
+    display:block;
+
+    margin-bottom:10px;
+
+    color:#d4af37;
+
+    font-size:15px;
+    font-weight:500;
+}
+
+select,
+textarea{
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+    border-radius:14px;
+
+    background:#1f1f1f;
+
+    color:white;
+
+    font-size:15px;
+
+    transition:0.3s ease;
+}
+
+select:focus,
+textarea:focus{
+    outline:none;
+    border:1px solid #d4af37;
+    box-shadow:0 0 10px rgba(212,175,55,0.3);
+}
+
+textarea{
+    height:150px;
+    resize:none;
+}
+
+.rating{
+    display:flex;
+    gap:12px;
+}
+
+.rating input{
+    display:none;
+}
+
+.rating label{
+    font-size:42px;
+
+    color:#555;
+
+    cursor:pointer;
+
+    transition:0.3s ease;
+}
+
+.rating label:hover{
+    color:#d4af37;
+    transform:scale(1.1);
+}
+
+.rating input:checked + label{
+    color:#d4af37;
+}
+#result{
+    margin-top:15px;
+    color:#d4af37;
+    font-size:14px;
+}
+
+/*Contact*/
+#contact{
+    color: #fff;
+}
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50px;
+    flex-wrap: wrap;
+    padding: 60px;
+}
+.contact img{
+    height: auto;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+    max-width: 100%;
+}
+form{
+    background: #000;
+    padding: 30px;
+    color: white;
+    width: 400px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+label{
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input,select,textarea{
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    border: 1px solid #000;
+    font-family: 'Poppins', sans-serif;
+}
+
+textarea{
+    height: 120px;
+}
+/*Footer*/
+footer{
+    background-color: #000;
+    border-top: 2px solid #d4af37;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+footer h2{
+    color: #d4af37;
+    margin-bottom: 10px;
+}
+
+footer nav a{
+    font-size: 20px;
+    color: #d4af37;
+}
+
+.footer-bottom{
+    width: 100%;
+    border-top: 1px solid #333;
+    margin-top: 20px;
+    padding-top: 15px;
+    font-size: 13px;
+    color: #888;
+}
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 1100px){
+
+    /* ABOUT */
+    .about-homepage,
+    #behindthebeauty{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .text{
+        width:100%;
+    }
+
+    .about-image img,
+    .image img{
+        max-width:100%;
+    }
+
+    /* STYLISTS */
+    .stylist-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    /* GALLERY */
+    .gallery{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 850px){
+
+    /* HEADER */
+    header{
+        flex-direction:column;
+        gap:20px;
+        padding:20px;
+    }
+
+    nav{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .logo{
+        width:90px;
+        height:90px;
+    }
+
+    /* HERO */
+    .hero h1{
+        font-size:2.3rem;
+    }
+
+    /* SERVICES */
+    .services-grid{
+        grid-template-columns:1fr;
+        padding:0 20px;
+    }
+
+    /* GALLERY */
+    .gallery{
+        grid-template-columns:1fr;
+    }
+
+    /* STYLISTS */
+    .stylist-grid{
+        grid-template-columns:1fr;
+        padding:30px 20px;
+    }
+
+    /* CONTACT */
+    .contact{
+        flex-direction:column;
+        text-align:center;
+        padding:40px 20px;
+    }
+
+    form{
+        width:100%;
+        max-width:500px;
+    }
+
+    .contact img{
+        width:100%;
+        max-width:400px;
+    }
+
+    /* FOOTER */
+    footer{
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+    }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px){
+
+    /* GENERAL */
+    h1{
+        font-size:32px;
+    }
+
+    p{
+        font-size:15px;
+    }
+
+    /* HEADER */
+    header{
+        padding:15px;
+    }
+
+    nav{
+        gap:12px;
+    }
+
+    nav a{
+        font-size:11px;
+    }
+
+    .logo{
+        width:75px;
+        height:75px;
+    }
+
+    /* HERO */
+    .hero{
+        height:auto;
+        padding:80px 20px;
+    }
+
+    .hero h1{
+        font-size:2rem;
+    }
+
+    .btn,
+    .hero-btn,
+    button{
+        padding:10px 22px;
+        font-size:14px;
+    }
+
+    /* ABOUT */
+    .about-homepage,
+    #behindthebeauty{
+        padding:70px 20px;
+        gap:40px;
+    }
+
+    #about-us{
+        font-size:14px;
+    }
+
+    /* SERVICES */
+    .service-card{
+        padding:18px;
+    }
+
+    .service-card img{
+        height:220px;
+    }
+
+    /* GALLERY */
+    .gallery{
+        padding:20px 10px;
+        gap:20px;
+    }
+
+    .gallery-card img{
+        height:200px;
+    }
+
+    /* STYLISTS */
+    .stylist-grid{
+        gap:25px;
+    }
+
+    .stylist-card img{
+        height:250px;
+    }
+
+    /* APPOINTMENT */
+    #appointment{
+        padding:30px 22px;
+    }
+
+    /* FEEDBACK */
+    #feedback{
+        padding:60px 15px;
+    }
+
+    #feedback-form{
+        padding:30px 22px;
+    }
+
+    .rating{
+        gap:8px;
+    }
+
+    .rating label{
+        font-size:34px;
+    }
+
+    textarea{
+        height:120px;
+    }
+
+    /* CONTACT */
+    .contact{
+        padding:30px 15px;
+    }
+
+    form{
+        padding:20px;
+    }
+
+    /* FOOTER */
+    footer{
+        padding:40px 20px;
+    }
+
+    footer h2{
+        font-size:22px;
+    }
+
+    .footer-bottom{
+        font-size:12px;
+    }
+}
