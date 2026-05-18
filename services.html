@@ -8,241 +8,64 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&family=Great+Vibes&display=swap" rel="stylesheet">
 </head>
-<style>
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #000;
-    color: white;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-header {
-    background-color: black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
-    border-bottom: 2px solid #d4af37;
-}
-
-nav {
-    display: flex;
-    gap: 18px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    font-size: 13px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    transition: 0.3s;
-}
-
-nav a:hover {
-    color: #d4af37;
-}
-
-.logo {
-    width: 110px;
-    height: 110px;
-    background: url("logo.png") center/contain no-repeat; 
-}
-
-.Services{
-    padding:70px 60px;
-    text-align:center;
-}
-
-.Services h1{
-    font-size:48px;
-    color:#d4af37;
-    margin-bottom:25px;
-    font-family: Playfair Display, serif;
-}
-
-.Services p{
-    max-width:800px;
-    margin:auto;
-    font-size:18px;
-    color:#ddd;
-    margin-bottom:35px;
-}
-.btn{
-    display:inline-block;
-    padding:14px 32px;
-    background:#d4af37;
-    color:#000;
-    text-decoration:none;
-    font-weight:bold;
-    border-radius:30px;
-    transition:0.3s;
-    margin-bottom:50px;
-}
-
-.btn:hover{
-    background:#fff;
-    color:#000;
-    transform:scale(1.05);
-}
-.services-grid{
-    display:grid;
-    grid-template-columns:repeat(2, 1fr);
-    gap:40px;
-    max-width:1000px;
-    margin:auto;
-}
-
-.service-card{
-    background:#111;
-    padding:25px;
-    border-radius:15px;
-    border:1px solid #d4af37;
-    transition:0.3s;
-    padding: 50px;
-    margin-bottom: 50px;
-}
-
-.service-card:hover{
-    transform:translateY(-10px);
-    box-shadow:0 0 15px rgba(223, 184, 59, 0.5);
-}
-
-.service-card img{
-    width:100%;
-    height:300px;
-    object-fit:cover;
-    border-radius:10px;
-}
-
-.service-card h2{
-    margin-top:18px;
-    color:#fff;
-    font-size:28px;
-}
-
-footer {
-    background-color: #000;
-    color: #fff;
-    padding: 60px 40px 20px;
-    border-top: 2px solid #d4af37;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 30px;
-    text-align: center;
-}
-
-footer h2 {
-    color: #d4af37;
-    margin-bottom: 15px;
-    font-size: 20px;
-}
-
-footer nav {
-    justify-content: center;
-}
-
-footer nav a {
-    font-size: 20px;
-    color: #d4af37;
-}
-
-.footer-bottom {
-    width: 100%;
-    margin-top: 40px;
-    padding-top: 20px;
-    border-top: 1px solid #333;
-    font-size: 13px;
-    color: #888;
-}
-
-@media(max-width:900px){
-
-    header{
-        flex-direction:column;
-        gap:15px;
-        padding:20px;
-    }
-
-    header nav{
-        flex-wrap:wrap;
-        justify-content:center;
-    }
-
-    .services-grid{
-        grid-template-columns:1fr;
-    }
-
-    .Services h1{
-        font-size:38px;
-    }
-
-    .Services{
-        padding:50px 20px;
-    }
-
-    footer{
-        grid-template-columns:1fr;
-        text-align:center;
-    }
-
-    footer nav{
-        justify-content:center;
-    }
-}
-</style>
-</head>
 
 <body>
+
 <header>
+
     <nav> 
         <a href="index.html">Home</a> 
         <a href="about.html">About</a> 
         <a href="services.html">Services</a> 
         <a href="stylists.html">Stylists</a> 
     </nav> 
-    <div class="logo"> 
-    </div> 
+
+    <div class="logo"></div> 
+
     <nav> 
         <a href="gallery.html">Gallery</a> 
         <a href="appointment.html">Appointment</a> 
         <a href="feedback.html">Feedback</a> 
         <a href="contact.html">Contact</a> 
     </nav> 
+
 </header>
 
-  <div class="Services">
-        <h1>Our Services</h1>
+<div class="Services">
+    <h1>Our Services</h1>
 
-        <p>At BOLUXE, we offer professional hair care services designed<br>to help you look and feel your best. Whether you want a simple trim or<br>a full transformation, our stylists are here for you.</p>
+    <p>
+        At BOLUXE, we offer professional hair care services designed
+        to help you look and feel your best.
+    </p>
 
-        <a href="signup.html" class="btn">Book Appointment</a><br><br>
+    <a href="signup.html" class="service-btn">Book Appointment</a>
 
-      <section class="services-grid">
+    <section class="services-grid">
 
         <div class="service-card">
-          <img src="braiding.jpeg" alt="Braiding" height="300" width="290">
-          <h2>Braiding</h2>
+            <img src="braiding.jpeg">
+            <h2>Braiding</h2>
         </div>
 
         <div class="service-card">
-          <img src="wig installation.jpeg" alt="Wig Installation" height="300" width="290">
-          <h2>Wig Installation</h2>
+            <img src="wig installation.jpeg">
+            <h2>Wig Installation</h2>
         </div>
 
         <div class="service-card">
-          <img src="haircuts.jpeg" alt="Haircuts and styling" height="300" width="290">
-          <h2>Haircuts & Styling</h2>
+            <img src="haircuts.jpeg">
+            <h2>Haircuts & Styling</h2>
         </div>
 
         <div class="service-card">
-          <img src="hair treatments.jpeg" alt="Hair Treatment" height="300" width="290">
-          <h2>Hair Treatments</h2>
+            <img src="hair treatments.jpeg">
+            <h2>Hair Treatments</h2>
         </div>
+
     </section>
-    
+
+</div>
 
 <footer>
 <section>
@@ -284,7 +107,6 @@ footer nav a {
     <p>&copy; 2026 BOLUXE All rights reserved.</p>
 </section>
 </footer>
+
 </body>
 </html>
-
-
