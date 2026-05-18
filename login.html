@@ -1,32 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Form</title>
-    <link href="styles.css" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login | BOLUXE</title>
+<link href="authstyles.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&family=Great+Vibes&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <div class="login">
-        <h1>Login</h1>
-        <h3>Enter your login credentials</h3>
-        <form action="appointment.html">
-            <label>Email:</label><br>
-            <input type="email" placeholder="Enter your Email" required><br><br>
 
-            <label>Password:</label><br>
-            <input type="password" placeholder="Enter your Password" required><br><br>
-            <a href="forgotpassword.html">Forgot Password</a><br><br>
-            
-            <button type="submit">Login</button><br><br>
-
-        <label>
-            <input type="checkbox">Remember Me<br>
-        </label>
-    </form>
-        <p>Don't have an account?
-        <a href="signup.html">Create an account</a></p>
+<div class="login">
+    <div class="auth-logo">
+        <img src="logo.png" alt="BOLUXE Logo">
     </div>
+
+    <h1>Login</h1>
+    <h3>Enter your login credentials</h3>
+
+    <form action="appointment.html">
+
+        <label id="field-label">Email Address</label>
+        <input type="email" placeholder="Enter your Email" required>
+
+        <label id="field-label">Password</label>
+        <input type="password" placeholder="Enter your Password" required>
+
+        <a href="forgotpassword.html">Forgot Password?</a><br><br>
+
+        <div class="remember">
+            <input type="checkbox">
+            <label>Remember Me</label>
+        </div>
+
+        <button type="submit">Login</button>
+    </form>
+
+    <p>
+        Don't have an account?
+        <a href="signup.html">Create an account</a>
+    </p>
+</div>
 </body>
 </html>
