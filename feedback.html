@@ -7,216 +7,8 @@
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
-<style>
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #000;
-    color: white;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-header {
-    background-color: black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
-    border-bottom: 2px solid #d4af37;
-}
-
-nav {
-    display: flex;
-    gap: 18px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    font-size: 13px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    transition: 0.3s;
-}
-
-nav a:hover {
-    color: #d4af37;
-}
-
-.logo {
-    width: 110px;
-    height: 110px;
-    background: url("logo.png") center/contain no-repeat; 
-}
-
-main{
-    width:100%;
-    max-width:500px;
-    margin:50px auto;
-}
-
-main h1{
-    color: #d4af37;
-    font-size:42px;
-    margin-bottom:15px;
-    font-family:'Playfair Display', serif;
-    text-align: center;
-}
-
-.description{
-    text-align: center;
-    font-size:15px;
-    color:  white;
-    margin-bottom:35px;
-    line-height:1.5;
-}
-
-form{
-    display:flex;
-    flex-direction:column;
-    gap:25px;
-}
-
-.form-group{
-    display:flex;
-    flex-direction:column;
-}
-
-label{
-    margin-bottom:10px;
-    font-size:16px;
-    color: white;
-}
-
-select,
-textarea{
-    font-family: 'Poppins', sans-serif;
-    width:100%;
-    padding:14px;
-    border:1px solid #bbb;
-    background:white;
-    font-size:15px;
-    outline:none;
-}
-
-select:focus,
-textarea:focus{
-    border-color:#000;
-}
-
-textarea{
-    height:120px;
-    resize:none;
-}
-.rating{
-    display:flex;
-    gap:10px;
-}
-
-.rating input{
-    display:none;
-}
-
-.rating label{
-    font-size:38px;
-    color:white;
-    cursor:pointer;
-    transition:0.3s;
-}
-
-.rating label:hover{
-    color:#000;
-}
-
-#result{
-    margin-top:10px;
-    color:#d4af37
-}
-button{
-    font-family: 'Poppins', sans-serif;
-    width:120px;
-    padding:12px;
-    margin:0 auto;
-    border:1px solid #888;
-    background:#d4af37;
-    cursor:pointer;
-    border-radius:6px;
-    font-size:16px;
-    transition:0.3s;
-}
-
-button:hover{
-    background:#ddd;
-}
-footer {
-    background-color: #000;
-    color: #fff;
-    padding: 60px 40px 20px;
-    border-top: 2px solid #d4af37;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 30px;
-    text-align: center;
-}
-
-footer h2 {
-    color: #d4af37;
-    margin-bottom: 15px;
-    font-size: 20px;
-}
-
-footer nav {
-    justify-content: center;
-}
-
-footer nav a {
-    font-size: 20px;
-    color: #d4af37;
-}
-
-.footer-bottom {
-    width: 100%;
-    margin-top: 40px;
-    padding-top: 20px;
-    border-top: 1px solid #333;
-    font-size: 13px;
-    color: #888;
-}
-@media(max-width:768px){
-
-    .nav-container{
-        flex-direction:column;
-    }
-
-    nav{
-        flex-wrap:wrap;
-        justify-content:center;
-    }
-
-    nav a{
-        padding:12px 18px;
-        font-size:14px;
-    }
-
-    .logo{
-        margin:15px 0;
-    }
-
-    main{
-        padding:0 20px;
-    }
-
-    main h1{
-        font-size:32px;
-    }
-}
-
-</style>
 </head>
-
 <body>
-
 <header>
      <nav> 
         <a href="index.html">Home</a> 
@@ -224,8 +16,9 @@ footer nav a {
         <a href="services.html">Services</a> 
         <a href="stylists.html">Stylists</a> 
     </nav> 
-    <div class="logo"> 
-    </div> 
+
+    <div class="logo"></div> 
+
     <nav> 
         <a href="gallery.html">Gallery</a> 
         <a href="appointment.html">Appointment</a> 
@@ -234,36 +27,25 @@ footer nav a {
     </nav> 
 </header>
 
-<main>
-    <h1>Client Feedback</h1>
+<main id="feedback">
+    <h1 id="feedback-header">Client Feedback</h1>
+    <p id="description"> We value your opinion and would love to hear about your experience with our services.<br>Your feedback helps us improve and provide better service to all our clients.</p>
 
-    <p class="description">
-        We value your opinion and would love to hear about your
-        experience with our services. Your feedback helps us improve
-        and provide better service to all our clients.
-    </p>
-
-    <form>
-
+    <form id="feedback-form">
         <div class="form-group">
-
             <label>Service Received</label>
-
-            <select id="service" required>
+            <select required>
                 <option selected disabled>Select</option>
                 <option>Braiding</option>
                 <option>Wig Installation</option>
                 <option>Haircuts</option>
                 <option>Hair Treatment</option>
             </select>
-
         </div>
 
-        <div class="form-group">
-
+        <div class="feedback-form">
             <label>Stylist</label>
-
-            <select id="stylist" required>
+            <select required>
                 <option selected disabled>Select</option>
                 <option>Shaniqua</option>
                 <option>Nina</option>
@@ -272,48 +54,29 @@ footer nav a {
                 <option>Gomolemo</option>
                 <option>Benson</option>
             </select>
-
         </div>
 
         <div class="form-group">
-
             <label>Rating</label>
 
             <div class="rating">
-
-                <input type="radio" id="star1" name="rating" value="1">
-                <label for="star1">☆</label>
-
-                <input type="radio" id="star2" name="rating" value="2">
-                <label for="star2">☆</label>
-
-                <input type="radio" id="star3" name="rating" value="3">
-                <label for="star3">☆</label>
-
-                <input type="radio" id="star4" name="rating" value="4">
-                <label for="star4">☆</label>
-
-                <input type="radio" id="star5" name="rating" value="5">
-                <label for="star5">☆</label>
-
+                <input type="radio" id="star1" name="rating" value="1"><label for="star1">☆</label>
+                <input type="radio" id="star2" name="rating" value="2"><label for="star2">☆</label>
+                <input type="radio" id="star3" name="rating" value="3"><label for="star3">☆</label>
+                <input type="radio" id="star4" name="rating" value="4"><label for="star4">☆</label>
+                <input type="radio" id="star5" name="rating" value="5"><label for="star5">☆</label>
             </div>
 
             <p id="result">No rating selected</p>
-
         </div>
 
         <div class="form-group">
-
-            <label for="review">Review</label>
-
-            <textarea id="review"></textarea>
-
+            <label>Review</label>
+            <textarea></textarea>
         </div>
 
         <button type="submit">Submit</button>
-
     </form>
-
 </main>
 
 <footer>
@@ -335,20 +98,9 @@ footer nav a {
 <section>
     <h2>Social Media</h2>
     <nav>
-      <a 
-        href="https://www.instagram.com/boluxehairstudio?igsh=N3lhdHZvMjdvNWFi&utm_source=qr" target="_blank">
-        <i class="fa-brands fa-instagram"></i>
-      </a>
-
-      <a 
-        href="https://www.tiktok.com/@boluxehairstudio?_r=1&_t=ZS-96FZWPO80Yi" target="_blank">
-        <i class="fa-brands fa-tiktok"></i>
-      </a>
-
-      <a 
-        href="https://wa.me/26772216670" target="_blank">
-        <i class="fa-brands fa-whatsapp"></i>
-      </a>
+      <a href="https://www.instagram.com/boluxehairstudio" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.tiktok.com/@boluxehairstudio" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+      <a href="https://wa.me/26772216670" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
     </nav>
 </section>
 
@@ -358,22 +110,14 @@ footer nav a {
 </footer>
 
 <script>
-
 const stars = document.querySelectorAll('input[name="rating"]');
 const result = document.getElementById('result');
 
 stars.forEach(star => {
-
     star.addEventListener('change', () => {
-
-        result.textContent =
-        "You rated " + star.value + " star(s)";
-
+        result.textContent = "You rated " + star.value + " star(s)";
     });
-
 });
-
 </script>
-
 </body>
 </html>
