@@ -1,0 +1,363 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #000000, #111111, #1b1b1b);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 20px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.login,
+.signup,
+.forgotpassword,
+.enterresetcode,
+.new-password {
+    width: 430px;
+    background: #0f0f0f;
+    padding: 45px;
+    border-radius: 22px;
+    border: 1px solid #d4af37;
+    box-shadow:
+        0 0 15px rgba(212, 175, 55, 0.2),
+        0 0 35px rgba(212, 175, 55, 0.08);
+    text-align: center;
+}
+
+.auth-logo {
+    margin-bottom: 20px;
+}
+
+.auth-logo img {
+    width: 120px;
+    height: auto;
+}
+
+.login h1,
+.signup h1,
+.forgotpassword h1,
+.enterresetcode h1,
+.new-password h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 34px;
+    color: #d4af37;
+    margin-bottom: 10px;
+}
+.login h3,
+.signup p,
+.forgotpassword p,
+.new-password p,
+.desc {
+    color: #cccccc;
+    font-size: 14px;
+    margin-bottom: 25px;
+    line-height: 1.7;
+}
+
+#field-label {
+    display: block;
+    text-align: left;
+    margin-top: 18px;
+    margin-bottom: 8px;
+    color: #d4af37;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 14px;
+    border-radius: 12px;
+    border: 1px solid #444;
+    background: #1a1a1a;
+    color: white;
+    font-size: 15px;
+    transition: 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    border-color: #d4af37;
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.4);
+}
+
+.login form a {
+    display: block;
+    text-align: right;
+    margin-top: 12px;
+    color: #d4af37;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+.login form a:hover {
+    color: white;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 18px;
+    margin-bottom: 25px;
+    color: #cccccc;
+    font-size: 14px;
+}
+
+.remember input {
+    accent-color: #d4af37;
+    width: 16px;
+    height: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(to right, #c9a227, #f1d16a);
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
+}
+.reset-btn {
+    display: inline-block;
+    width: 100%;
+    padding: 14px;
+    border-radius: 12px;
+    background: linear-gradient(to right, #c9a227, #f1d16a);
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s ease;
+    margin-top: 10px;
+}
+
+.reset-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 15px rgba(231, 181, 17, 0.4);
+}
+
+a {
+    color: #d4af37;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+a:hover {
+    color: white;
+}
+
+p {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.terms {
+    margin-top: 18px;
+    font-size: 12px;
+    color: #9f9f9f;
+    line-height: 1.6;
+}
+
+.code-inputs {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.code-inputs input {
+    width: 58px;
+    height: 65px;
+    border-radius: 14px;
+    border: 1px solid #444;
+    background: #1a1a1a;
+    color: #d4af37;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.code-inputs input:focus {
+    outline: none;
+    border-color: #d4af37;
+    box-shadow: 0 0 12px rgba(212, 175, 55, 0.5);
+}
+
+.timer {
+    color: #bbbbbb;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+#countdown {
+    color: #d4af37;
+    font-weight: 600;
+}
+
+.enterresetcode h1 {
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 768px) {
+
+    body {
+        padding: 20px;
+    }
+
+    .login,
+    .signup,
+    .forgotpassword,
+    .enterresetcode,
+    .new-password {
+        width: 100%;
+        max-width: 420px;
+        padding: 35px 28px;
+    }
+
+    .login h1,
+    .signup h1,
+    .forgotpassword h1,
+    .enterresetcode h1,
+    .new-password h1 {
+        font-size: 28px;
+    }
+
+    .auth-logo img {
+        width: 100px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        padding: 13px;
+        font-size: 14px;
+    }
+
+    button,
+    .reset-btn {
+        padding: 13px;
+        font-size: 15px;
+    }
+
+    .code-inputs {
+        gap: 10px;
+    }
+
+    .code-inputs input {
+        width: 50px;
+        height: 58px;
+        font-size: 20px;
+    }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 480px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .login,
+    .signup,
+    .forgotpassword,
+    .enterresetcode,
+    .new-password {
+        padding: 28px 20px;
+        border-radius: 18px;
+    }
+
+    .login h1,
+    .signup h1,
+    .forgotpassword h1,
+    .enterresetcode h1,
+    .new-password h1 {
+        font-size: 24px;
+    }
+
+    .login h3,
+    .signup p,
+    .forgotpassword p,
+    .new-password p,
+    .desc {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    #field-label {
+        font-size: 13px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        padding: 12px;
+        font-size: 14px;
+        border-radius: 10px;
+    }
+
+    button,
+    .reset-btn {
+        padding: 12px;
+        font-size: 14px;
+        border-radius: 10px;
+    }
+
+    .remember {
+        font-size: 13px;
+        gap: 8px;
+    }
+
+    .remember input {
+        width: 14px;
+        height: 14px;
+    }
+
+    .terms {
+        font-size: 11px;
+    }
+
+    .code-inputs {
+        gap: 8px;
+    }
+
+    .code-inputs input {
+        width: 42px;
+        height: 48px;
+        font-size: 18px;
+        border-radius: 10px;
+    }
+
+    .timer {
+        font-size: 13px;
+    }
+}
