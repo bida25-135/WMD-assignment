@@ -6,207 +6,19 @@
 <title>Stylists</title>
 <link href="styles.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&family=Great+Vibes&display=swap" rel="stylesheet">
-<style>
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #000;
-    color: white;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-header {
-    background-color: black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
-    border-bottom: 2px solid #d4af37;
-}
-
-nav {
-    display: flex;
-    gap: 18px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    font-size: 13px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    transition: 0.3s;
-}
-
-nav a:hover {
-    color: #d4af37;
-}
-
-.logo {
-    width: 110px;
-    height: 110px;
-    background: url("logo.png") center/contain no-repeat; 
-}
-
-section{
-    padding:70px 50px;
-    text-align:center;
-}
-
-section h1{
-    font-size:52px;
-    color:#d4af37;
-    margin-bottom:20px;
-    font-family:'Playfair Display', serif;
-}
-
-section > p{
-    max-width:850px;
-    margin:auto;
-    color:#ddd;
-    font-size:18px;
-    margin-bottom:60px;
-}
-
-.stylist-grid{
-    display:grid;
-    grid-template-columns:repeat(3, 1fr);
-    gap:35px;
-    max-width:1300px;
-    margin:auto;
-}
-
-.card{
-    background:#111;
-    border:1px solid #d4af37;
-    border-radius:18px;
-    overflow:hidden;
-    padding:20px;
-    box-shadow:0 0 12px rgba(212,175,55,0.15);
-    transition:0.3s;
-    margin-bottom: 50px;
-}
-
-.card:hover{
-    transform:translateY(-10px);
-    box-shadow:0 0 18px rgba(212,175,55,0.35);
-}
-
-.card img{
-    width:100%;
-    height:305px;
-    object-fit:cover;
-    border-radius:12px;
-    margin-bottom:18px;
-}
-
-.card h3{
-    font-size:28px;
-    color:#d4af37;
-    margin-bottom:12px;
-    font-family:'Playfair Display', serif;
-}
-
-.card p{
-    font-size:15px;
-    color:#ddd;
-}
-
-section > .card{
-    width:31%;
-    display:inline-block;
-    margin:20px 1%;
-    vertical-align:top;
-}
-footer {
-    background-color: #000;
-    color: #fff;
-    padding: 60px 40px 20px;
-    border-top: 2px solid #d4af37;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 30px;
-    text-align: center;
-}
-
-footer h2 {
-    color: #d4af37;
-    margin-bottom: 15px;
-    font-size: 20px;
-}
-
-footer nav {
-    justify-content: center;
-}
-
-footer nav a {
-    font-size: 20px;
-    color: #d4af37;
-}
-
-.footer-bottom {
-    width: 100%;
-    margin-top: 40px;
-    padding-top: 20px;
-    border-top: 1px solid #333;
-    font-size: 13px;
-    color: #888;
-}
-
-@media(max-width:1000px){
-
-    .stylist-grid{
-        grid-template-columns:repeat(2,1fr);
-    }
-
-    section > .card{
-        width:46%;
-    }
-}
-
-@media(max-width:700px){
-
-    header nav{
-        gap:12px;
-    }
-
-    section h1{
-        font-size:38px;
-    }
-
-    .stylist-grid{
-        grid-template-columns:1fr;
-    }
-
-    section > .card{
-        width:100%;
-        margin:20px 0;
-    }
-
-    footer{
-        grid-template-columns:1fr;
-        text-align:center;
-    }
-
-    footer nav{
-        justify-content:center;
-    }
-}
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
-
 <body>
-  <header>
+<header>
     <nav> 
         <a href="index.html">Home</a> 
         <a href="about.html">About</a> 
         <a href="services.html">Services</a> 
         <a href="stylists.html">Stylists</a> 
     </nav> 
-    <div class="logo"> 
-    </div> 
+
+    <div class="logo"></div> 
+
     <nav> 
         <a href="gallery.html">Gallery</a> 
         <a href="appointment.html">Appointment</a> 
@@ -214,49 +26,52 @@ footer nav a {
         <a href="contact.html">Contact</a> 
     </nav> 
 </header>
+
 <section>
-        <h1>Meet Our Stylists</h1>
-        <p>Our hairstylists are friendly, creative, and passionate about helping you look<br>and feel amazing. Each stylist has their own unique<br>style and skills, so you’re always in good hands.</p>
+    <h1>Meet Our Stylists</h1>
+    <p>
+        Our hairstylists are friendly, creative, and passionate about helping you look<br>and feel amazing. Each stylist has their own unique<br>style and skills, so you’re always in good hands.
+    </p>
 
-        <div class="stylist-grid">
-            <div class="card">
-                <img src="shaniqua.jpeg" alt="Shaniqua" height="296" width="269">
-                <h3>Shaniqua</h3>
-                <p>Shaniqua is our top stylist, with many years of experience with braids, wigs, and protective styling. She focuses on neat,<br>long-lasting hairstyles that suit each client perfect.</p>
-            </div>
-
-            <div class="card">
-                <img src="nina.jpeg" alt="Nina" height="300" width="276">
-                <h3>Nina</h3>
-                <p>Nina enjoys styling natural hair. Treatments, silk presses,<br>and maintaining healthy hair are some of her specialties to keep your hair strong and shiny.</p>
-            </div>
-
-            <div class="card">
-                <img src="charmaine.jpeg" alt="Charmaine" height="300" width="276">
-                <h3>Charmaine</h3>
-                <p>Charmaine is noted for her unique braiding skills that produce clean-looking hairstyles.<br>She specializes in knotless braids and cornrows, all of which look neat and professional.</p>
-            </div>
+    <div class="stylist-grid">
+        <div class="stylist-card">
+            <img src="shaniqua.jpeg">
+            <h3>Shaniqua</h3>
+            <p>Shaniqua is our top stylist, with many years of experience with braids, wigs, and protective styling. She focuses on neat,<br>long-lasting hairstyles that suit each client perfect</p>
         </div>
 
-            <div class="card">
-                <img src="joe.jpeg" alt="Joe" height="300" width="276">
-                <h3>Joe</h3>
-                <p>Joe is known for his precise fade cuts and detailed line-ups.<br>He works on all details to produce a modern and neat hairstyle.</p>
-            </div>
-
-            <div class="card">
-                <img src="gomolemo.jpeg" alt="Gomolemo" height="300" width="276">
-                <h3>Gomolemo</h3>
-                <p>Gomolemo loves trying new styles and designs.<br>From hair patterns to trendy cuts, he brings creativity into every haircut.</p>
-            </div>
-
-            <div class="card">
-                <img src="benson.jpeg" alt="Benson" height="300" width="276">
-                <h3>Benson</h3>
-                <p>Benson is new to the salon but very experienced and careful. He assists with basic haircuts,<br>and he keeps improving daily under the supervision of the other staff members.</p>
-            </div>
+        <div class="stylist-card">
+            <img src="nina.jpeg">
+            <h3>Nina</h3>
+            <p>Nina enjoys styling natural hair. Treatments, silk presses,<br>and maintaining healthy hair are some of her specialties to keep your hair strong and shiny.</p>
         </div>
-    </section>
+
+        <div class="stylist-card">
+            <img src="charmaine.jpeg">
+            <h3>Charmaine</h3>
+            <p>Charmaine is noted for her unique braiding skills that produce clean-looking hairstyles.<br>She specializes in knotless braids and cornrows, all of which look neat and professional.</p>
+        </div>
+
+        <div class="stylist-card">
+            <img src="joe.jpeg">
+            <h3>Joe</h3>
+            <p>Joe is known for his precise fade cuts and detailed line-ups.<br>He works on all details to produce a modern and neat hairstyle.</p>
+        </div>
+
+        <div class="stylist-card">
+            <img src="gomolemo.jpeg">
+            <h3>Gomolemo</h3>
+            <p>Gomolemo loves trying new styles and designs.<br>From hair patterns to trendy cuts, he brings creativity into every haircut.</p>
+        </div>
+
+        <div class="stylist-card">
+            <img src="benson.jpeg">
+            <h3>Benson</h3>
+            <p>Benson is new to the salon but very experienced and careful. He assists with basic haircuts,<br>and he keeps improving daily under the supervision of the other staff members.</p>
+        </div>
+    </div>
+</section>
+
 <footer>
 <section>
     <h2>Opening Times</h2>
@@ -292,7 +107,6 @@ footer nav a {
       </a>
     </nav>
 </section>
-
 <section class="footer-bottom">
     <p>&copy; 2026 BOLUXE All rights reserved.</p>
 </section>
