@@ -368,6 +368,11 @@ p{
 }
 
 /*Feedback*/
+#feedback-header{
+    font-family: 'Playfair Display', serif;
+    size: 48px;
+    text-align: center;
+}
 #feedback{
     width:100%;
     min-height:100vh;
