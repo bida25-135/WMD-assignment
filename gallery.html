@@ -7,207 +7,19 @@
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&family=Great+Vibes&display=swap" rel="stylesheet">
-
-<style>
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #000;
-    color: white;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-header {
-    background-color: black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
-    border-bottom: 2px solid #d4af37;
-}
-
-nav {
-    display: flex;
-    gap: 18px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    font-size: 13px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    transition: 0.3s;
-}
-
-nav a:hover {
-    color: #d4af37;
-}
-
-.logo {
-    width: 110px;
-    height: 110px;
-    background: url("logo.png") center/contain no-repeat; 
-}
-
-.gallery{
-    padding:70px 50px;
-    display:grid;
-    grid-template-columns:repeat(3, 1fr);
-    gap:35px;
-    max-width:1300px;
-    margin:auto;
-}
-h1{
-  font-family: Playfair Display,serif;
-  color: #d4af37;
-  text-align: center;
-  font-size: 42px;
-  font-weight: 900;
-}
-p{
-  text-align: center;
-}
-.gallery-title{
-  font-family: 'Playfair Display', serif;
-    grid-column:1 / -1;
-    color:#d4af37;
-    font-size:38px;
-    margin-top:20px;
-    text-align: center;
-}
-
-.card{
-    background:#111;
-    border:1px solid #d4af37;
-    border-radius:15px;
-    padding:20px;
-    text-align:center;
-    transition:0.3s;
-}
-
-.card:hover{
-    transform:translateY(-10px);
-    box-shadow:0 0 18px rgba(212,175,55,0.45);
-}
-
-.card img{
-    width:100%;
-    height:300px;
-    object-fit:cover;
-    border-radius:10px;
-    margin-bottom:15px;
-}
-
-.card h2,
-.card h3{
-    color:#fff;
-    font-size:24px;
-    margin-bottom:15px;
-}
-
-.card p{
-    color:#ddd;
-    font-size:16px;
-    line-height:1.7;
-}
-
-.price{
-    color:#d4af37;
-    font-size:22px;
-    font-weight:bold;
-    margin-top:10px;
-}
-
-footer {
-    background-color: #000;
-    color: #fff;
-    padding: 60px 40px 20px;
-    border-top: 2px solid #d4af37;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 30px;
-    text-align: center;
-}
-
-footer h2 {
-    color: #d4af37;
-    margin-bottom: 15px;
-    font-size: 20px;
-}
-
-footer nav {
-    justify-content: center;
-}
-
-footer nav a {
-    font-size: 20px;
-    color: #d4af37;
-}
-
-.footer-bottom {
-    width: 100%;
-    margin-top: 40px;
-    padding-top: 20px;
-    border-top: 1px solid #333;
-    font-size: 13px;
-    color: #888;
-}
-
-@media(max-width:1000px){
-
-    .gallery{
-        grid-template-columns:repeat(2,1fr);
-    }
-
-    .hero h1{
-        font-size:45px;
-    }
-}
-
-@media(max-width:700px){
-
-    .top-bar{
-        flex-direction:column;
-    }
-
-    nav{
-        justify-content:center;
-    }
-
-    .gallery{
-        grid-template-columns:1fr;
-        padding:40px 20px;
-    }
-
-    .hero{
-        height:auto;
-        padding:100px 20px;
-    }
-
-    .hero h1{
-        font-size:38px;
-    }
-
-    .hero p{
-        font-size:16px;
-    }
-}
-
-</style>
 </head>
-
 <body>
+
 <header>
     <nav> 
-        <a href="index.html">Home</a> 
-        <a href="about.html">About</a> 
-        <a href="services.html">Services</a> 
-        <a href="stylists.html">Stylists</a> 
+      <a href="index.html">Home</a> 
+      <a href="about.html">About</a> 
+      <a href="services.html">Services</a> 
+      <a href="stylists.html">Stylists</a> 
     </nav> 
-    <div class="logo"> 
-    </div> 
+
+    <div class="logo"></div> 
+
     <nav> 
         <a href="gallery.html">Gallery</a> 
         <a href="appointment.html">Appointment</a> 
@@ -216,81 +28,51 @@ footer nav a {
     </nav> 
 </header>
 
-<section class="hero">
-
+<section>
     <h1>BOLUXE Lookbook</h1>
-
-    <p>
-        Explore our latest hairstyles with pricing.
-        Choose your style and book your appointment.
-    </p>
+    <p>Explore our latest hairstyles with pricing.</p>
 
 </section>
-<section class="gallery">
 
-    <h1 class="gallery-title">Braiding</h1>
-
-    <div class="card">
+<div class="gallery">
+    <h1>Braiding</h1>
+    <div class="gallery-card">
         <h2>Fulani Braids</h2>
-        <img src="fulani.jpeg" alt="Fulani Braids">
+        <img src="fulani.jpeg">
         <p class="price">P200</p>
     </div>
 
-    <div class="card">
-        <h2>Knotless Braids</h2>
-        <img src="knotless.jpeg" alt="Knotless Braids">
 
+    <div class="gallery-card">
+        <h2>Knotless Braids</h2>
+        <img src="knotless.jpeg">
         <p>Small: P300</p>
         <p>Medium: P280</p>
         <p>Large: P250</p>
     </div>
 
-    <div class="card">
+    <div class="gallery-card">
         <h2>Cornrows</h2>
-        <img src="cornrows.jpeg" alt="Cornrows">
+        <img src="cornrows.jpeg">
         <p class="price">P180</p>
     </div>
-    <h1 class="gallery-title">Wigs</h1>
-    <div class="card">
-        <h2>Wig Installation</h2>
-        <img src="wig installation.jpeg" alt="Wig Installation">
 
-        <p>Install Only: P250</p>
-        <p>Install + Basic Styling: P290</p>
-        <p>Install + Full Styling: P330</p>
+    <h1>Wigs</h1>
+
+    <div class="gallery-card">
+        <h2>Wig Installation</h2>
+        <img src="wig installation.jpeg">
+        <p>Install: P250</p>
     </div>
 
-    <h1 class="gallery-title">Haircuts</h1>
+    <h1>Haircuts</h1>
 
-    <div class="card">
+    <div class="gallery-card">
         <h2>Haircuts</h2>
-        <img src="hair cuts.jpeg" alt="Haircuts">
+        <img src="hair cuts.jpeg">
         <p class="price">P80</p>
     </div>
-
-    <h1 class="gallery-title">Hair Treatments</h1>
-
-    <div class="card">
-        <h3>Hair Washing</h3>
-        <img src="hair relaxing.jpeg" alt="Hair Washing">
-        <p class="price">P50</p>
     </div>
-
-    <div class="card">
-        <h3>Color Treatment</h3>
-        <img src="hair colouring.jpeg" alt="Color Treatment">
-        <p class="price">P100</p>
-    </div>
-
-    <div class="card">
-        <h3>Hair Relaxing</h3>
-        <img src="hair relaxing.jpeg" alt="Hair Relaxing">
-        <p class="price">P100</p>
-    </div>
-
-</section>
-
-<!-- FOOTER -->
 
 <footer>
 <section>
