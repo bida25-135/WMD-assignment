@@ -7,148 +7,7 @@
 <link href="styles.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&family=Great+Vibes&display=swap" rel="stylesheet">
-
-<style>
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #000;
-    color: white;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-header {
-    background-color: black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
-    border-bottom: 2px solid #d4af37;
-}
-
-nav {
-    display: flex;
-    gap: 18px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    font-size: 13px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    transition: 0.3s;
-}
-
-nav a:hover {
-    color: #d4af37;
-}
-
-.logo {
-    width: 110px;
-    height: 110px;
-    background: url("logo.png") center/contain no-repeat; 
-}
-
-.contact {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 60px;
-}
-
-.contact img {
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-}
-
-.contactform {
-    width: 400px;
-}
-
-.contactform h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 3rem;
-    margin-bottom: 20px;
-    color:#d4af37;
-    margin-bottom: 20px;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-label {
-    margin-top: 10px;
-    font-weight: bold;
-}
-
-input, textarea {
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px #ccc;
-    border-radius: 5px;
-}
-
-textarea {
-    height: 100px;
-}
-
-button {
-    margin-top: 15px;
-    padding: 12px;
-    background-color: #d4af37;
-    border: none;
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 25px;
-}
-
-button:hover {
-    background-color: black;
-    color: #d4af37;
-}
-
-footer {
-    background-color: #000;
-    color: #fff;
-    padding: 60px 40px 20px;
-    border-top: 2px solid #d4af37;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 30px;
-    text-align: center;
-}
-
-footer h2 {
-    color: #d4af37;
-    margin-bottom: 15px;
-    font-size: 20px;
-}
-
-footer nav {
-    justify-content: center;
-}
-
-footer nav a {
-    font-size: 20px;
-    color: #d4af37;
-}
-
-.footer-bottom {
-    width: 100%;
-    margin-top: 40px;
-    padding-top: 20px;
-    border-top: 1px solid #333;
-    font-size: 13px;
-    color: #888;
-}
-
-</style>
 </head>
-
 <body>
 <header>
     <nav>
@@ -166,33 +25,30 @@ footer nav a {
         <a href="feedback.html">Feedback</a>
         <a href="contact.html">Contact</a>
     </nav>
-
 </header>
 
-<section class="contact">
-
-    <img src="contact.jpeg" alt="Contact Image" height="700" width="400">
-
+    <section class="contact">
+    <img src="contact.jpeg" alt="Contact Image">
     <div class="contactform">
-        <h2>Let's Connect</h2>
+        <h1>Let's Connect</h1>
 
         <form>
-            <label>Name</label>
+            <label id="contact">Name</label>
             <input type="text" required>
 
-            <label>Phone Number</label>
-            <input type="text">
+            <label id="contact">Phone Number</label>
+            <input type="text" required>
 
-            <label>Email Address</label>
+            <label id="contact">Email Address</label>
             <input type="email" required>
 
-            <label>Message</label>
+            <label id="contact">Message</label>
+
             <textarea placeholder="Write message here"></textarea>
 
             <button type="submit">Submit</button>
         </form>
     </div>
-
 </section>
 
 <footer>
@@ -214,18 +70,15 @@ footer nav a {
 <section>
     <h2>Social Media</h2>
     <nav>
-      <a 
-        href="https://www.instagram.com/boluxehairstudio?igsh=N3lhdHZvMjdvNWFi&utm_source=qr" target="_blank">
+      <a href="https://www.instagram.com/boluxehairstudio?igsh=N3lhdHZvMjdvNWFi&utm_source=qr" target="_blank">
         <i class="fa-brands fa-instagram"></i>
       </a>
 
-      <a 
-        href="https://www.tiktok.com/@boluxehairstudio?_r=1&_t=ZS-96FZWPO80Yi" target="_blank">
+      <a href="https://www.tiktok.com/@boluxehairstudio?_r=1&_t=ZS-96FZWPO80Yi" target="_blank">
         <i class="fa-brands fa-tiktok"></i>
       </a>
 
-      <a 
-        href="https://wa.me/26772216670" target="_blank">
+      <a href="https://wa.me/26772216670" target="_blank">
         <i class="fa-brands fa-whatsapp"></i>
       </a>
     </nav>
@@ -235,6 +88,6 @@ footer nav a {
     <p>&copy; 2026 BOLUXE All rights reserved.</p>
 </section>
 </footer>
+
 </body>
 </html>
-
